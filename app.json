@@ -47,7 +47,7 @@
         }
       },
       {
-        "plan": "coralogix:free"
+        "plan": "coralogix:free-30mbday"
       }
     ]
   }
