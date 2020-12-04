@@ -31,6 +31,10 @@
       "N8N_VERSION": {
         "description": "Version of n8n.",
         "value": "0.96.0"
+      },
+      "HEROKU_API_KEY": {
+        "description": "Heroku CLI autentication",
+        "value": "<HEROKU_TOKEN>"
       }
     },
     "formation": {
