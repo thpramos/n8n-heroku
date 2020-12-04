@@ -18,7 +18,7 @@
       },
       "GENERIC_TIMEZONE": {
         "description": "Time Zone to use with Heroku. You can find the name of your timezone here: https://momentjs.com/timezone/",
-        "value": "Europe/Berlin"
+        "value": "America/Sao_Paulo"
       },
       "N8N_BASIC_AUTH_USER": {
         "description": "Basic Authentication User for n8n",
@@ -27,23 +27,27 @@
       "N8N_BASIC_AUTH_PASSWORD": {
         "description": "Basic Authentication Password to secure n8n.",
         "value": "pass"
+      },
+      "N8N_VERSION": {
+        "description": "Version of n8n.",
+        "value": "0.96.0"
       }
     },
     "formation": {
       "web": {
         "quantity": 1,
-        "size": "free"
+        "size": "standard-1x"
       }
     },
     "addons": [
       {
         "plan": "heroku-postgresql",
         "options": {
-          "version": "11"
+          "version": "12"
         }
       },
       {
-        "plan": "papertrail:choklad"
+        "plan": "coralogix:free"
       }
     ]
   }
