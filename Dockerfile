@@ -15,7 +15,7 @@ RUN apk --update add --virtual build-dependencies python build-base && \
 	npm_config_user=root npm install -g n8n@${N8N_VERSION} && \
 	apk del build-dependencies
 
-RUN apk --no-cache add curl
+RUN mkdir -p /etc/apt/sources.list.d && apk --no-cache add curl
 
 RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
